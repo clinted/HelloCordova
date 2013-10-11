@@ -17,7 +17,7 @@ $(function() {
     document.addEventListener("deviceready",onDeviceReady,false);
     function onDeviceReady()
     {
-        console.log( "onDeviceReady. You should see this in the output window.");
+        console.log( "onDeviceReady. You should see this message in the output window.");
     }
 
     clickButton.on( "click", function(){
