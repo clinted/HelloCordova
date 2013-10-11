@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<title>Hello JQuery Mobile</title>
+
+		<link rel="stylesheet" href="jquery.mobile-1.3.2.css" />
+		<script src="jquery-2.0.3.js"></script>
+		<script src="jquery.mobile-1.3.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+
+	</head>
+	<body>
+
+		<div id="homePage" data-role="page">
+			<div data-role="header" >
+				<h1>Home Page</h1>
+			</div>
+			<div data-role="content">
+				<p>Hello Cordova and JQuery Mobile!</p>
+				<ul data-role="listview" data-theme="g" data-filter="true">
+					<li><a href="#devicePage">Device Info</a></li>
+					<li><a href="#accelerometerPage">Accelerometer</a></li>
+					<li><a href="#geolocationPage">Geolocation</a></li>
+					<li><a href="#cameraPage">Camera</a></li>
+					<li><a href="#notificationPage">Notification</a></li>
+				</ul>
+				<p>
+					<a href="#storagePage" data-role="button">LocalStorage</a><br/>
+				</p>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<a href="#dialogPage" data-rel="dialog" data-icon="plus">Save</a>
+			</div>
+		</div>
+
+		<div id="devicePage" data-role="page">
+			<div data-role="header" >
+				<a href="#homePage" data-icon="arrow-l">Back</a>
+				<h1>Device Info</h1>
+			</div>
+			<div data-role="content">
+				<p id="deviceName"></p>
+				<p id="deviceCordova"></p>
+				<p id="devicePlatform"></p>
+				<p id="deviceUuid"></p>
+				<p id="deviceVersion"></p>
+			</div>
+		</div>
+
+		<div id="accelerometerPage" data-role="page">
+			<div data-role="header" >
+				<a href="#homePage" data-icon="arrow-l">Back</a>
+				<h1>Accelerometer</h1>
+			</div>
+			<div data-role="content">
+				<p id="aX"></p>
+				<p id="aY"></p>
+				<p id="aZ"></p>
+				<p id="aTime"></p>
+			</div>
+		</div>
+
+		<div id="geolocationPage" data-role="page">
+			<div data-role="header" >
+				<a href="#homePage" data-icon="arrow-l">Back</a>
+				<h1>Geolocation</h1>
+			</div>
+			<div data-role="content">
+				<p id="latitude"></p>
+				<p id="longitude"></p>
+				<p id="altitude"></p>
+			</div>
+		</div>
+
+		<div id="cameraPage" data-role="page">
+			<div data-role="header" >
+				<a href="#homePage" data-icon="arrow-l">Back</a>
+				<h1>Camera</h1>
+			</div>
+			<div data-role="content">
+				<p id="imageUri"></p>
+			</div>
+		</div>
+
+		<div id="notificationPage" data-role="page">
+			<div data-role="header" >
+				<a href="#homePage" data-icon="arrow-l">Back</a>
+				<h1>Notifications</h1>
+			</div>
+			<div data-role="content">
+				<a id="clickButton" href="#">Click Me!</a></br>
+			</div>
+		</div>
+
+		<div id="storagePage" data-role="page">
+			<div data-role="header" >
+				<a href="#homePage" data-icon="delete">Cancel</a>
+				<h1>New Page</h1>
+				<a href="#homePage" data-icon="save">Save</a>
+			</div>
+			<div data-role="content">
+				<label for="name">What is your name:</label>
+				<input id="name"  type="text" name="name" value="" />
+				<a id="saveButton" href="" data-role="button">Save</a>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<h4>Footer</h4>
+			</div>
+		</div>
+
+		<div id="dialogPage" data-role="page">
+			<div data-role="header" >
+				<h1>Dialog</h1>
+			</div>
+			<div data-role="content">
+				This is a dialog.
+			</div>
+		</div>
+
+	</body>
+
+	<script src="index.js" type="text/javascript"></script>
+
+</html>
