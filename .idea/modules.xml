@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/HelloJQueryMobile.iml" filepath="$PROJECT_DIR$/.idea/HelloJQueryMobile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/HelloCordova.iml" filepath="$PROJECT_DIR$/.idea/HelloCordova.iml" />
     </modules>
   </component>
 </project>
