@@ -63,7 +63,7 @@ $(function() {
 
     geolocationPage.on( "pagehide", function() {
         if( geoWatchId ) {
-            navigator.accelerometer.clearWatch( geoWatchId );
+            navigator.geolocation.clearWatch( geoWatchId );
         }
     } );
 
